@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <style>
+        /* Container to hold the grid */
+        .my-account-grid {
+            display: flex; /* Use flexbox to create the grid */
+            flex-wrap: wrap; /* Allows items to wrap when space is insufficient */
+        }
+
+        /* Left column (30%) */
+        .my-account-grid .left-column {
+            flex: 0 0 30%; /* Fixed width of 30% */
+            max-width: 30%; /* Ensures the column won't grow beyond 30% */
+            padding: 15px; /* Add padding as needed */
+            background-color: #f0f0f0; /* Light grey background */
+        }
+
+        /* Right column (70%) */
+        .my-account-grid .right-column {
+            flex: 0 0 70%; /* Fixed width of 70% */
+            max-width: 70%; /* Ensures the column won't grow beyond 70% */
+            padding: 15px; /* Add padding as needed */
+            background-color: #ffffff; /* White background */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            /* Stack columns on top of each other on small screens */
+            .my-account-grid {
+                flex-direction: column;
+            }
+            .my-account-grid .left-column,
+            .my-account-grid .right-column {
+                flex: 1 1 100%; /* Each column takes up 100% width */
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="my-account-grid">
+        <div class="left-column">
+            <!-- Place content for the left column here -->
+            <p>This is the left column (30%). Add your content here.</p>
+        </div>
+        <div class="right-column">
+            <!-- Place content for the right column here -->
+            <p>This is the right column (70%). Add your content here.</p>
+        </div>
+    </div>
+</body>
+</html>
+

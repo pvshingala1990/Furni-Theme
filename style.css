@@ -1,0 +1,197 @@
+/*
+Theme Name: Furni
+Theme URI: [Provide your theme's URI here]
+Description: Child theme for Twenty Twenty-One.
+Author: [Your name]
+Author URI: [Your website or profile URL]
+Template: twentytwentyone
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: furni
+*/
+
+.add_to_cart_button {
+    background: #000;
+    vertical-align: middle;
+    text-align: center !important;
+    padding: 10px 15px;
+    border-radius: 100%;
+    display: none;
+}
+
+span.icon-cross {
+    line-height: normal;
+    display: inline-block;
+}
+
+.col-12:hover .add_to_cart_button {
+    display: inline-block;
+    bottom: -20px;
+}
+
+.col-12:hover .add_to_cart_button {
+    animation-duration: 1s;
+    position: relative;
+    animation-name: slidein;
+    display: inline-block;
+    bottom: 20px;
+}
+
+@keyframes slidein {
+    from {
+        bottom: 50px;
+
+    }
+
+    to {
+        bottom: 20px;
+
+    }
+}
+
+
+.twc-myaccount ul li a {
+    display: inline-block !important;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px !important;
+    border-color: #3e918c !important;
+    color: #fbfcfd !important;
+}
+
+
+/* Optional: Add hover effect to the links */
+.twc-myaccount ul li a:hover {
+    background-color: #377e7a;
+    color: aliceblue !important;
+}
+
+
+/* 
+.woocommerceaa-cart {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    font-size: small !important;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .woocommerce-MyAccount-navigation {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.woocommerce-cart .woocommerce-MyAccount-navigation {
+    width: auto;
+}
+
+
+.woocommerce-MyAccount-content {
+    width: auto;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content p a {
+    text-decoration: none;
+    color: #3b5d50;
+    font-weight: 700;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content p:last-of-type {
+    font-size: 15px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content p:first-of-type {
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content p:last-of-type a {
+    text-decoration: none;
+    color: #3b5d50 !important;
+    font-weight: 700;
+}
+
+.woocommerce-account .woocommerce-EditAccountForm #account_display_name+span {
+    font-size: 15px;
+}
+
+.woocommerce-form-row .woocommerce-form-row--wide .form-row .form-row-wide label {
+    padding-bottom: 10px;
+    padding-left: 10px;
+} */
+
+
+
+.my-account-grid {
+    display: flex;
+}
+.my-account-grid .left-column {
+    flex: 0 0 30%;
+    max-width: 25%;
+    padding: 15px;
+}
+.my-account-grid .right-column {
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding: 15px;
+}
+@media (max-width: 768px) {
+    .my-account-grid {
+        flex-direction: column;
+    }
+
+    .my-account-grid .left-column,
+    .my-account-grid .right-column {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .my-account-grid .left-column nav ul li a {
+        font-size: medium;
+    }
+}
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.text-center {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+#load-more-posts {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+#load-more-posts:hover {
+    background-color: #0056b3;
+}
